@@ -28,3 +28,25 @@ I made it as a joke for my brother
 `sleep`: waits a certain amount of seconds  
 `setvar`: sets a variable to a certain value  
 `quit`: quits the script  
+## Syntax and Examples
+`print,<message>`: prints `<message>` to the screen  
+`askvar,<var>`: Gets input from the user and assigns it to `<var>`  
+`printvar,<var>`: prints the contents of `<var>` to the user  
+`math,<num1>,<op>,<num2>`: returns `<num1> <op> <num2>`. (Ex. `math,1,/,2` returns `0.5`)  
+`if,<val1>,<com>,<val2>`: compares `<val1>` and `<val2>` based on what `<op>` is.    
+If the comparison is true, then `condition` is set to `True`.  
+If the comparison is false, then `condition` is set to `False`.  
+`cmd,<command>`: runs `<command>` in the command line  
+`sleep,<sec>`: does nothing for `<sec>` seconds  
+`setvar,<val>,<name>`: sets the variable named `<name>` to `<val>`  
+## Extra symbols
+All of theese symbols must be before the command:  
+`~`: runs the command if `condition` is true  
+`!`: runs the command if `condition` is false  
+`#`: sets the first argument to whatever the last command returned  
+`.`: does not run the command(used as a comment)  
+# Other Info
+## The `condition` variable
+The `condition` variable is used for checking if the last if statement is true or false. You cannot directly access the variable from the HaxScript commands  
+## Using one var and one string in `if` statements
+You must put the variable on the first argument otherwise it will be a string.
