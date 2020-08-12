@@ -3,6 +3,7 @@ HackerOS is an OS for hackers (Not really)
 #
 I made it as a joke for my brother
 
+# 0.2.4 does not work yet.
 # Changelog
 ## 0.2.3
 1. Added sound
