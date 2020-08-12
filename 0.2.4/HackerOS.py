@@ -20,17 +20,17 @@ state=""
 def math(num1, op, num2):
 	try:
 		if op == "+":
-			return num1 + num2
+			return str(num1 + num2)
 		elif op == "-":
-			return num1 - num2
+			return str(num1 - num2)
 		elif op == "*":
-			return num1 * num2
+			return str(num1 * num2)
 		elif op == "/":
-			return num1 / num2
+			return str(num1 / num2)
 		elif op == "%":
-			return num1 % num2
+			return str(num1 % num2)
 		elif op == "^":
-			return num1 ^ num2
+			return str(num1 ^ num2)
 		else:
 			Error()
 	except:
@@ -181,22 +181,24 @@ def runScript():
 			test = list(cmd)
 			test.pop(0)
 			cmd = ''.join(test)
+			args = cmd.split(",")
 			if condition == False:
 				continue
 		if list(cmd)[0] == "!":
 			test = list(cmd)
 			test.pop(0)
 			cmd = ''.join(test)
+			args = cmd.split(",")
 			if condition == True:
 				continue
 		if list(cmd)[0] == "#":
 			test = list(cmd)
 			test.pop(0)
 			cmd = ''.join(test)
+			args = cmd.split(",")
 			args[1] = return_value
 		if list(cmd)[0] == ".":
 			continue
-		args = cmd.split(",")
 		if args[0] == "print":
 			print(args[1])
 			return_value = args[1]
@@ -235,7 +237,6 @@ def runScript():
 						Error()
 				except:
 					Error("var does not exist")
-			print(math(num1, op, num2))
 			return_value = math(num1, op, num2)
 		elif cmd == "clear" or cmd == "cls":
 			os.system("cls")
