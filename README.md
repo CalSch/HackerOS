@@ -62,6 +62,7 @@ All of theese symbols must be before the command:
 # Using the compiler (`compiler.py`)
 Take your `.hax` script file and drag it into `compiler.py`, if it says `Error`, then there's a command that's not in the compiler.  
 When I add a command to HaxScript, I will add it to `compiler.py`  
+(It will print a lot of debug messages.)  
   
 It will ask you for a file name, it will automatically add `.py` to the end.  
 After it creates the compiled `.py` file, it will ask you if you want to run it, if you type an `n`, it will not run it (The capital y means it defaults to yes).  
