@@ -14,7 +14,9 @@ I made it as a joke for my brother
 2. `!` is the opposite of `~`.
 3. If there is a `#` before the command, the first argument will be what the last command returned.
 4. The first argument for `setvar` is now the value of the variable.
-
+## 0.2.5
+1. Didn't add much to `HackerOS.py`
+2. Added `compiler.py` to compile `.hax` scripts into `.py`
 # HaxScript Documentation
 ## Commands
 `print`: prints a message to the user  
@@ -45,6 +47,12 @@ All of theese symbols must be before the command:
 `!`: runs the command if `condition` is false  
 `#`: sets the first argument to whatever the last command returned  
 `.`: does not run the command(used as a comment)  
+# Using compiler(`compiler.py`)
+Take your `.hax` script file and drag it into `compiler.py`, if it says `Error`, then there's a command that's not in the compiler.  
+When I add a command to HaxScript, I will add it to `compiler.py`  
+  
+It will ask you for a file name, it will automatically add `.py` to the end.  
+After it creates the compiled `.py` file, it will ask you if you want to run it, if you type an `n`, it will not run it (The capital y means it defaults to yes).  
 # Other Info
 ## The `condition` variable
 The `condition` variable is used for checking if the last if statement is true or false. You cannot directly access the variable from the HaxScript commands  
