@@ -1,7 +1,10 @@
 # HackerOS
 HackerOS is an OS for hackers (Not really)
 #
-I made it as a joke for my brother
+I made it as a joke for my brother, but then I made it into three things:  
+1. An OS
+2. A Scripting language
+3. A Script compiler
 
 # Changelog
 ## 0.2.3
@@ -58,3 +61,5 @@ After it creates the compiled `.py` file, it will ask you if you want to run it,
 The `condition` variable is used for checking if the last if statement is true or false. You cannot directly access the variable from the HaxScript commands  
 ## Using one var and one string in `if` statements
 You must put the variable on the first argument otherwise it will be a string.
+## HaxScipts
+HaxScripts have a `.hax` extension.
