@@ -59,7 +59,7 @@ All of theese symbols must be before the command:
 `!`: runs the command if `condition` is false  
 `#`: sets the first argument to whatever the last command returned  
 `.`: does not run the command(used as a comment)  
-# Using compiler(`compiler.py`)
+# Using the compiler (`compiler.py`)
 Take your `.hax` script file and drag it into `compiler.py`, if it says `Error`, then there's a command that's not in the compiler.  
 When I add a command to HaxScript, I will add it to `compiler.py`  
   
