@@ -20,6 +20,7 @@ I made it as a joke for my brother, but then I made it into three things:
 ## 0.2.5
 1. Didn't add much to `HackerOS.py`
 2. Added `compiler.py` to compile `.hax` scripts into `.py`
+3. `math` does not print the result
 # HaxScript Documentation
 ## Commands
 `print`: prints a message to the user  
@@ -35,15 +36,23 @@ I made it as a joke for my brother, but then I made it into three things:
 `quit`: quits the script  
 ## Syntax and Examples
 `print,<message>`: prints `<message>` to the screen  
+Has no return value.  
 `askvar,<var>`: Gets input from the user and assigns it to `<var>`  
+Reurns what the user says.  
 `printvar,<var>`: prints the contents of `<var>` to the user  
+Has no return value.   
 `math,<num1>,<op>,<num2>`: returns `<num1> <op> <num2>`. (Ex. `math,1,/,2` returns `0.5`)  
-`if,<val1>,<com>,<val2>`: compares `<val1>` and `<val2>` based on what `<op>` is.    
+Returns the math result.  
+`if,<val1>,<com>,<val2>`: compares `<val1>` and `<val2>` based on what `<op>` is.   
+Has no return value.   
 If the comparison is true, then `condition` is set to `True`.  
 If the comparison is false, then `condition` is set to `False`.  
 `cmd,<command>`: runs `<command>` in the command line  
+Has no return value.  
 `sleep,<sec>`: does nothing for `<sec>` seconds  
+Has no return value.  
 `setvar,<val>,<name>`: sets the variable named `<name>` to `<val>`  
+Has no return value.  
 ## Extra symbols
 All of theese symbols must be before the command:  
 `~`: runs the command if `condition` is true  
